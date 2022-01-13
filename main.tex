@@ -70,7 +70,7 @@ b) Quelle est l'erreur relative maximale liée au arrondi sur l'opérateur x⊗y
   & e_f = x*y*(\epsilon_x + \epsilon_y)\\
   & \epsilon_f = (\epsilon_x + \epsilon_y)
  \end{flalign*}
- L'erreur maximale est donc, en notant $\epsilon_x = \epsilon_y = 2^{-p}$ et p = 24 car travaillant en float32 : $2^{-24} + 2^{-24} = 2^{-23}$ en rajoutant l'erreur de float on arrive au même résultat
+ L'erreur maximale est donc, en notant $\epsilon_x = \epsilon_y = 2^{-p}$ et p = 24 car travaillant en float32 : $2^{-24} + 2^{-24} = 2^{-23}$ en rajoutant l'erreur de float on arrive au même résultat ($3*2^{-24}$ possible aussi selon calcul des floats)
  
 \item Question 3
 
@@ -159,7 +159,7 @@ a) Quelles sont les deux expansions de Taylor nécessaire à ce développement
 f(x+h) = f(x) + h*f'(x) + h^2 * \frac{f^{(2)}(x)}{2!} + O(h^3)
 \]
 \[
-f(x+h2) = f(x) + 2h*f'(x) + 4* h^2 * \frac{f^{(2)}(x)}{2!} + O(h^3)
+f(x+2h) = f(x) + 2h*f'(x) + 4* h^2 * \frac{f^{(2)}(x)}{2!} + O(h^3)
 \]
 b) quelle est l'approximation de f′(x) dans ce cas
 
